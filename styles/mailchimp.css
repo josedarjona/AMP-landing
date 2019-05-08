@@ -1,13 +1,12 @@
 
 
 .wrapper {
-  width: 50%;
-  max-width: 600px;
+  width: 60%;
+  max-width: 800px;
   margin: 5% auto;
 }
 
 .box {
-  box-shadow: 0px 0px 10px #afc0d9;
   background-color: #fff;
   padding: 35px;
   border-radius: .25rem;
@@ -33,10 +32,11 @@ p {
 }
 
 input {
-  border: 1px solid rgb(220, 219, 235);
+  border: none;
+  box-shadow: 0px 0px 10px #eff0f2;
   border-radius: 4px;
   font-size: 13px;
-  padding: 10px;
+  padding: 20px;
   color: #000;
   transition: all .15s ease-in;
 }
@@ -57,8 +57,7 @@ input[type=submit]::focus {
 }
 
 input:focus {
-  border-color: rgb(53, 114, 210);
-  box-shadow: 0px 0px 8px 2px rgba(53, 114, 210, .5);
+  border: none;
   outline: none;
 }
 
@@ -68,4 +67,10 @@ input::placeholder {
 
 #subscribe-result p {
   margin-top: 35px;
+}
+
+#mc-embedded-subscribe {
+  border: 3px solid #becee8;
+  color: black;
+  background-color: white;
 }
