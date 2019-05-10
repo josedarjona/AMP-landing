@@ -27,14 +27,13 @@ $(document).ready(function (){
 
 
 function scrollRight() {
-    
-  console.log("right")
   
   let source = ""
   
     source = videos[0];
     videos.shift();
     videos.push(source);
+    
     $("#imageOne").prop("src", videos[0])
     $("#imageTwo").prop("src", videos[1])
     $("#imageThree").prop("src", videos[2])
@@ -50,6 +49,7 @@ function scrollRight() {
       source = videos[videos.length - 1];
       videos.pop();
       videos.unshift(source);
+
       $("#imageOne").prop("src", videos[0])
       $("#imageTwo").prop("src", videos[1])
       $("#imageThree").prop("src", videos[2])

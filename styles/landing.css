@@ -17,7 +17,6 @@ body {
 
 #carousel {
   display: flex;
-  justify-content: center;
   align-items: center;
   margin-top: -130px;
 }
@@ -49,7 +48,7 @@ body {
   .ads-div {
     flex-wrap: wrap;
     flex-direction: column;
-    align-content: center;
+    align-items: center;
   }
   .ad-left, .ad-right {
     margin-top: 0px;
@@ -64,7 +63,11 @@ body {
 }
 
 
-
+@Media only screen and (min-width: 751px) {
+  #carousel {
+    justify-content: center;
+  }
+}
 @Media only screen and (max-width: 750px) {
   .hide-when-tiny {
     display: none !important;
@@ -77,6 +80,8 @@ body {
 
   #carousel {
     margin-top: -100px;
+    flex-direction: row;
+    justify-content: center;
   }
 
 }
