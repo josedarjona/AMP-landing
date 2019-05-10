@@ -36,7 +36,12 @@ nav ul {
 
 nav li {
   list-style: none;
-  margin: 10px;
+  margin: 30%;
+}
+
+li a {
+  text-decoration: none;
+  color: white;
 }
 
 
@@ -130,8 +135,14 @@ nav li {
   }
 
   nav ul {
-    margin-right: 0px;
+    margin-right: 10px;
     margin: 0 50%;
+    
+  }
+
+  nav li {
+    margin: 30px 5px;
+
   }
 
 }
