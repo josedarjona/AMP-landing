@@ -9,6 +9,7 @@
   <link rel="stylesheet" type="text/css" media="screen" href="styles/mailchimp.css" />
   <link rel="stylesheet" type="text/css" media="screen" href="styles/landing.css" />
   <link rel="stylesheet" type="text/css" media="screen" href="styles/all.css" />
+  <link rel="stylesheet" type="text/css" media="screen" href="styles/normalize.css" />
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
   <script src="javascripts/"></script>
   <script src="javascripts/carousel.js"></script>
@@ -29,12 +30,28 @@
       <i class="fas fa-arrow-left left" onclick="left()"></i>
       <div id="carousel">
 
+
+          <object>
+              <param name="movie" value=""/>
+              <embed class="video" id="imageOne" height="300" width="300" src="#" type="application/x-shockwave-flash"/>
+          </object>
+
+          <object>
+              <param name="movie" value=""/>
+              <embed class="video hide-when-tiny" id="imageTwo" height="300" width="300" src="#" type="application/x-shockwave-flash"/>
+          </object>
+
+          <object>
+              <param name="movie" value=""/>
+              <embed class="video hide-when-small" id="imageThree" height="300" width="300" src="#" type="application/x-shockwave-flash"/>
+          </object>
+<!-- 
           <iframe id="imageOne" frameBorder="0" class="video" height="300" width="300" allowfullscreen="" src="#"></iframe>
 
           <iframe id="imageTwo" frameBorder="0" class="video hide-when-tiny" height="300" width="300" allowfullscreen="" src="#"></iframe>
 
-          <iframe id="imageThree" frameBorder="0" class="video hide-when-small" height="300" width="300" allowfullscreen="" src="#"></iframe>
-          
+          <iframe id="imageThree" frameBorder="0" class="video hide-when-small" height="300" width="300" allowfullscreen="" src="#"></iframe> -->
+
       </div>
       <i class="fas fa-arrow-right" onclick="scrollRight()"></i>
     </div>
