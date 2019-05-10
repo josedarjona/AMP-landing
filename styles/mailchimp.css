@@ -3,7 +3,7 @@
 .wrapper {
   width: 60%;
   max-width: 800px;
-  margin: 5% auto;
+  margin: 1% auto;
 }
 
 .box {
@@ -33,7 +33,7 @@ p {
 
 input {
   border: none;
-  box-shadow: 0px 0px 10px #eff0f2;
+  box-shadow: 0px 0px 15px #bec0c5;
   border-radius: 4px;
   font-size: 13px;
   padding: 20px;
@@ -45,14 +45,22 @@ input[type=email] {
   width: 60%;
 }
 
-@Media only screen and (max-width: 550px){
+@Media only screen and (max-width: 750px){
+  .wrapper {
+    width: 80%;
+    margin: 1%;
+  }
   .box {
-    padding: 0;
-  }
-  input[type=email] {
     width: 100%;
+    margin: auto;
   }
-}
+  input {
+    margin: 2% auto;
+  }
+
+ }
+
+
 
 input[type=submit] {
   background-color: rgb(53, 114, 210);
