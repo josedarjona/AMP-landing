@@ -37,23 +37,32 @@ body {
   justify-content: space-between
 }
 
-.ad-left {
+.ad-left, .ad-right {
   margin: 0% 2%;
   margin-top: -100px;
   margin-bottom: 2%;
+  max-height: 200px;
+  max-width: 300px;
 }
 
-.ad-right {
-  margin: 0% 2%;
-  margin-top: -100px;
-  margin-bottom: 2%;
+@Media only screen and (max-width: 1250px) {
+  .ads-div {
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+  }
+  .ad-left, .ad-right {
+    margin-top: 0px;
+  }
 }
+
 
 @Media only screen and (max-width: 1100px) {
   .hide-when-small {
     display: none !important;
   }
 }
+
 
 
 @Media only screen and (max-width: 750px) {
